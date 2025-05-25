@@ -1,0 +1,85 @@
+body{
+    background: #3F5EFB;
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    @import url('https://fonts.cdnfonts.com/css/fivo-sans');
+    font-family: 'Fivo Sans', sans-serif;
+    font-size: large;
+                                            
+}
+h1:hover{
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);    background-clip: text;
+    color: transparent;
+}
+form {
+    width: 60%;
+    /* or you can say width=500px; */
+}
+fieldset{
+    border-radius: 10px;
+    border: 4px solid pink;
+}
+input:required{
+    border: 3px solid rgb(215, 124, 170);
+}
+
+input:optional {
+    border: 3px dashed peru;
+}
+input:read-only {
+    background-color: darkolivegreen;
+    color: whitesmoke;
+}
+input[type="radio"]:checked{
+    height: 20px;
+    width:20px;
+}
+/* adjacent sibling to input and label */
+input[type="radio"]:checked +label{
+    color:blue;
+}
+input[type="submit"]{
+    border: 3px solid peru;
+    border-radius: 10px;
+    padding: 5px;
+}
+input[type="reset"]:hover{
+    padding: 8px;
+    background-color: rgb(120, 43, 193);
+    font-weight: 700;
+}
+input[type="submit"]:hover{
+    padding: 8px;
+    background-color: rgb(120, 43, 193);
+    font-weight: 700;
+}
+input[type="reset"]{
+    border: 3px solid peru;
+    border-radius: 10px;
+    padding: 5px;
+}
+select{
+    background-color:rgb(140, 143, 40) ;
+    border-radius: 10px;
+    cursor: pointer;
+}
+input:focus{
+    background-color:rgb(193, 186, 84)
+}
+input[type="text"]+p {
+    display: none;
+    color:aquamarine;
+}
+input[type="text"]:hover+p {
+    display:inline
+}
+img{
+    display: none;
+}
+input[type="email"]:focus:valid~img#valid{
+    display: inline;
+    
+}
+input[type="email"]:focus:invalid~img#invalid{
+    display: inline;
+    
+}
