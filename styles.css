@@ -18,6 +18,9 @@ fieldset{
     border-radius: 10px;
     border: 4px solid pink;
 }
+fieldset{
+    box-shadow: 30px 30px 30px rgb(115, 80, 147);
+}
 input:required{
     border: 3px solid rgb(215, 124, 170);
 }
